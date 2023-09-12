@@ -43,6 +43,10 @@ MENU RESPONSIVO
     display: none;
 }
 @media(max-width:768px){
+
+    html{
+        scroll-padding-top: 12rem;
+    }
     .header a.icon {
         display: block;
         position: absolute;
@@ -51,16 +55,21 @@ MENU RESPONSIVO
         right: 1rem;
     }
     .header #links {
-        display: none;
+
         text-align: center;
+        display: none;
       }
 
     .header ul{
         flex-direction: column;
-        
     }
     .header-wrapper {
         flex-direction: column;
+    }
+}
+@media (min-width: 769px) {
+    #links{
+        display: block !important;
     }
 }
 
@@ -184,7 +193,7 @@ ul a:hover::before, .link:hover::before {
 .card {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: 0.3s;
-    width: 60%;
+    width: 70%;
     border-radius: 5px;
     margin: 0 auto;
     display: flex;
@@ -205,14 +214,17 @@ ul a:hover::before, .link:hover::before {
     object-fit: cover;
 }
 
-figcaption {
+.card figcaption {
     padding: 1rem 2rem;
     line-height: 30px;
+    font-size: 1.25rem;
 }
+
 
 @media(max-width:768px) {
     .card {
         flex-direction: column;
+        width: 80%;
     }
 
     .card img {
@@ -260,15 +272,28 @@ figcaption {
 
 .beijo-card figcaption {
     max-width: 420px;
+    width: 100%;
+    overflow-wrap: break-word;
     margin-right: auto;
     text-align: left;
-    padding: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1.25rem;
 }
 
-@media(max-width:768px) {
+@media screen and (min-width: 769px) and  (max-width:1024px) {
     .beijo-card {
         flex-direction: column-reverse;
         max-width: 70%;
+    }
+
+    .beijo-card img {
+        max-width: 100%;
+    }
+}
+@media(max-width: 768px) {
+    .beijo-card {
+        width: 90%;
+        flex-direction: column-reverse;
     }
 
     .beijo-card img {

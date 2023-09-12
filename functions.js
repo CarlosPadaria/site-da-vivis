@@ -10,14 +10,6 @@ function myFunction() {
   }
   
 }
-function atualizarMenu()
-{
-  var x = document.getElementById("links");
-  var windowWidth = window.innerWidth;
-  if(x.style.display == "none" && windowWidth > 769){
-    x.style.display = "block"
-  }
-} 
 
-window.addEventListener("resize", atualizarMenu);
+
 
