@@ -52,7 +52,8 @@ MENU RESPONSIVO
         position: absolute;
 
         font-size: 1.75rem;
-        right: 1rem;
+        top: 1rem;
+        right: 1.5rem;
     }
     .header #links {
 
@@ -258,6 +259,7 @@ ul a:hover::before, .link:hover::before {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: #F6F6F6;
     margin-bottom: 9rem;
+    line-height: 30px;
 }
 
 
